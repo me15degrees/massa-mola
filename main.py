@@ -1,4 +1,5 @@
 from vpython import *
+
 #objetos
 parede = box(pos=vector(-20,0,0), size = vector(1,10,10), color = color.yellow)
 bloco = box(pos=vector(5,-3,0), size = vector(4,4,4), color = color.red)
