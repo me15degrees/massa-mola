@@ -27,17 +27,17 @@ def simular(m, k):
     while True:
         rate(1/dt)
         f = vector(-bloco.pos.x * k, 0, 0)
-        acel = f / m
-        bloco.pos = bloco.pos + (bloco.vel * dt)
-        bloco.vel = bloco.vel + (acel * dt)
+        acel = f / m # 2ª lei de newton
+        bloco.pos = bloco.pos + (bloco.vel * dt) # s = s0 + vt
+        bloco.vel = bloco.vel + (acel * dt) # v = v0 + at
         
-        mola.axis = bloco.pos - mola.pos
-        t = t + dt
+        mola.axis = bloco.pos - mola.pos # atualiza o vínculo
+        t = t + dt # atualiza o tempo
         
-        grafico1.plot(t, bloco.pos.x)
+        grafico1.plot(t, bloco.pos.x) # atualiza o plot dos dois gráficos
         grafico2.plot(t, bloco.vel.x)
 
-        grafico1.data.clear()
+        grafico1.data.clear() # apaga as informações para não sobrepor
         grafico1.data.clear()
 
 def iniciar_simulacao():
