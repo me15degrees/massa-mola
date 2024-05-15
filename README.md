@@ -12,7 +12,8 @@ Você pode instalar as bibliotecas necessárias utilizando o seguinte comando:
 - Clone este repositório: `git clone https://github.com/me15degrees/massa-mola.git`
 - Acesse o diretório pelo comando: `cd simulacao-mola`
 - Execute o script: `python simulacao_mola.py`
-Contribuições
+
+### Contribuições
 
 Sinta-se à vontade para contribuir com melhorias ou correções. Para contribuir, siga os passos abaixo:
 - Faça um fork deste repositório.
